@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Tests Suite">
+
+    <listeners>
+        <listener class-name="com.hcukAPILibraries.listeners.Listener" />
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="BibSubProduct API Tests">
+        <classes>
+           <!-- <class name="com.hcukBibSubProduct.tests.TestRetrieveCountSubscriberAPI" />
+            <class name="com.hcukBibSubProduct.tests.TestRetrieveISBN" />-->
+            <class name="com.hcukBibSubProduct.tests.TestRetrieveMetaISBN" />
+        </classes>
+    </test>
+
+    <!--<test verbose="2" preserve-order="true" name="Local API Tests">
+        <classes>
+            <class name="com.hcukBibSubProduct.tests.LocalAPITests" />
+        </classes>
+    </test>-->
+</suite>
